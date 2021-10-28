@@ -1,0 +1,4 @@
+/* HeroesComponent's private CSS styles */
+.table-hover tbody tr {
+  cursor: pointer;
+}

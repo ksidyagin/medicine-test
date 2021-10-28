@@ -1,0 +1,13 @@
+<nb-card class="border-0" *ngIf="hero">
+  <nb-card-header class="pb-0">{{hero.name | uppercase}} Details</nb-card-header>
+  <nb-card-body>
+    <form>
+      <input ngxFormGroupRow label="Id" name="heroId" type="text" class="form-control-plaintext" disabled [(ngModel)]="hero.id"/>
+      <input ngxFormGroupRow label="Hero name" name="heroName" type="text" class="form-control" [(ngModel)]="hero.name" placeholder="Hero name"/>
+      <div ngxFormGroupRow>
+        <button type="button" class="btn btn-secondary" (click)="goBack()">Go back</button> 
+        <button type="button" class="btn btn-primary" (click)="save()">Save</button>
+      </div>
+    </form>
+  </nb-card-body>
+</nb-card>

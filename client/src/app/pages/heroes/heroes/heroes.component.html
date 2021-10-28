@@ -1,0 +1,27 @@
+<nb-card class="border-0">
+  <nb-card-header class="pb-0">My Heroes</nb-card-header>
+  <nb-card-body>
+    <form>
+      <input #heroName ngxFormGroupRow label="Hero name" type="text" class="form-control" placeholder="Hero name"/>
+      <!-- (click) passes input value to add() and then clears the input -->
+      <button ngxFormGroupRow type="button" class="btn btn-primary" (click)="add(heroName.value); heroName.value=''">add</button>
+    </form>
+    
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col" class="border-0 text-right">#</th>
+          <th scope="col" class="border-0">Name</th>
+          <th scope="col" class="border-0"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let hero of heroes" routerLink="../detail/{{hero.id}}">
+          <th scope="row" class="align-middle text-right">{{hero.id}}</th>
+          <td class="align-middle">{{hero.name}}</td>
+          <td class="text-center"><button type="button" class="btn btn-danger btn-sm" (click)="delete(hero)">delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </nb-card-body>
+</nb-card>

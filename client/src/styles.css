@@ -1,0 +1,32 @@
+.btn {
+  text-transform: none !important;
+}
+
+.col-form-label {
+  padding-top: 8px;
+}
+
+.form-group.row .form-control-plaintext {
+  padding: 7px 0;
+}
+
+.form-group.row .custom-control.custom-checkbox {
+  margin: 5px 0;
+}
+
+ngb-typeahead-window.dropdown-menu {
+  left: 15px;
+  width: -webkit-calc(100% - 30px);
+  width:    -moz-calc(100% - 30px);
+  width:         calc(100% - 30px);
+  max-height: 245px;
+  overflow-y: auto;
+}
+
+nb-card-body {
+  overflow: visible !important;
+}
+
+#toast-container > div {
+  width: 40rem !important;
+}

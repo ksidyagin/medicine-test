@@ -1,0 +1,10 @@
+/* DashboardComponent's private CSS styles */
+.module {
+  color: #eee;
+  background-color: #607d8b;
+  cursor: pointer;
+}
+.module:hover {
+  color: #607d8b;
+  background-color: #eee;
+}

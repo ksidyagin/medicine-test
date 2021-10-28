@@ -1,0 +1,9 @@
+<nb-card class="border-0">
+  <nb-card-header class="pb-0">Hero Search</nb-card-header>
+  <nb-card-body>
+    <form>
+      <input ngxFormGroupRow label="Search hero" type="text" class="form-control" placeholder="Search hero by name"
+        [ngxTypeahead]="search" valueField="id" labelField="name" (selectItem)="select($event.item)"/>
+    </form>
+  </nb-card-body>
+</nb-card>
